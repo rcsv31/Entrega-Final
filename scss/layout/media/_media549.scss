@@ -1,0 +1,26 @@
+@media (min-width: 425px) and (max-width: 549px) {
+    footer{
+        @include flex(column, nowrap, center, center);
+    }   
+    .formasContacto{
+        @include flex(column, wrap, center, center);
+        margin-top: 1.25rem
+    }
+    .logoSugerencia{
+        p{
+            margin-right: 1.25rem;
+        }
+    }
+    .contacto{
+            margin-top: -4.375rem;
+    }
+    .datosContacto {
+        @include flex(column, wrap, center, center);
+
+    }
+        .contacto {
+            h3 {
+                @include estiloTexto(1.3rem, $colorTextoSecundario, center);
+            }
+        }
+}

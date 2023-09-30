@@ -1,0 +1,40 @@
+.formasContacto{
+    @include grid(2,1, 6.25rem, space-between);
+    padding-left: 1.25rem
+}
+
+.informacionContacto{
+    @include flex(column, wrap, center, center);
+}
+
+.logoSugerencia{
+    @include flex(row, wrap, center, center);
+    @include estiloTexto(1.125rem, $colorTextoSecundario, center);
+    img{
+        width: 5rem;
+        padding-bottom: 1.25rem;
+    }
+    p{
+        margin: 0;
+        line-height: 1.5;
+        max-height: 7.5em;
+    }
+}
+.direccion{
+        @include estiloTexto(1.25rem, $colorTextoSecundario, center);
+        margin-top: 1.5625rem;
+}
+
+.emailContacto,
+.telefonoContacto{
+    @include flex(row, wrap, center, center);
+    @include estiloTexto(1.25rem, $colorTextoSecundario, center);
+    gap: 1.25rem;
+    p{
+        margin: 0;
+    }
+}
+
+.telefonoContacto{
+    margin-top: 1.25rem;
+}

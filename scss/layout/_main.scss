@@ -1,0 +1,14 @@
+
+.sectionIndexMasVendidos {
+    h2{
+        @include estiloTexto(1.875rem, $colorTerciario, center);
+        margin: 1rem 0rem;
+    }
+}
+
+.contacto {
+    h3 {
+        @include estiloTexto (1.5625rem, $colorTextoSecundario, left);
+        margin-top: 1.875rem;
+    }
+}

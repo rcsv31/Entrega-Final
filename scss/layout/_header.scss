@@ -1,0 +1,19 @@
+.navbar {
+    background-color: $colorPrincipal;
+}
+
+.navbar-brand {
+    img {
+        max-width: 3.125rem;
+    &:hover{
+        filter: invert(48%) sepia(65%) saturate(7214%) hue-rotate(323deg) brightness(100%) contrast(105%);
+        }
+    }
+}
+
+.nav-link{
+    @include estiloTexto (1.125rem, $colorTextoPrincipal, center);
+        &:hover {
+            color: $colorTerciario;
+        }
+}

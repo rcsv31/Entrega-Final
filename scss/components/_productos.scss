@@ -1,0 +1,54 @@
+%estiloProductos {
+    a {
+        text-decoration: none;
+
+        img{
+            width: 18.75rem;
+            height: 18.75rem;
+        }
+
+        h3 {
+            @include estiloTexto (1.125rem, $colorTextoPrincipal, center);
+            margin-top: 0.3125rem;
+        }
+
+        p {
+            @include estiloTexto (1.125rem, $colorTextoPrincipal, center);
+            margin: 0.3125rem;
+        }
+    }
+    justify-self: center;
+}
+
+
+.contenedorProductos {
+    @include grid(3, 2, 3.125rem, space-evenly);
+    margin-top: 3.125rem;
+}
+
+.productosMasVendidos {
+    @extend %estiloProductos;
+    border: 2px solid $colorBorde;
+    background-color: $colorTerciario;
+    &:hover {
+        background-color: $colorPrincipal;
+        transform: scale(1.1);
+    }
+}
+
+.productosExLibris,
+.productosLacre,
+.productosSellosSeco {
+    @extend %estiloProductos;
+    border: .125rem solid $colorBorde;
+    background-color: $colorPrincipal;
+    &:hover {
+        background-color: $colorTerciario;
+        transform: scale(1.1);
+    }
+}
+
+.productosSellosSeco{
+    align-self: center;
+}
+

@@ -1,0 +1,29 @@
+footer{
+    @include flex(row, wrap, space-between, center);
+    @include estiloTexto(1.125rem, $colorTextoPrincipal, center);
+    padding: 1.25rem;
+    margin-top: 3.125rem;
+    background-color: $colorPrincipal;
+}
+
+.redesSociales,
+.envioGratis { 
+    text-align: center;
+    a{
+        img {
+                width: 3.125rem;
+                height: 3.125rem;
+                margin: .625rem;
+                &:hover{
+                    filter: invert(48%) sepia(65%) saturate(7214%) hue-rotate(323deg) brightness(100%) contrast(105%);
+                    cursor: pointer;
+                }
+            }
+        }
+}
+
+.envioGratis{
+    p{
+        margin-bottom: .625rem;
+    }
+}

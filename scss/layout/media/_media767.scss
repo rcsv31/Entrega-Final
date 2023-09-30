@@ -1,0 +1,112 @@
+@media (min-width: 425px) and (max-width: 767px) {
+
+    .navbar-brand {
+            img {
+                width: 2.625rem;
+            }
+    }
+    .bannerTuSello{
+        flex-direction: column;
+            h1 {
+            font-size: 1.5625rem;
+        }
+        .experiencia,
+        .envios {
+            font-size: 1rem;
+            img{
+                height: 3rem;
+                width: auto;
+            }
+        }
+        .envios{
+            p{
+                margin-bottom: 0rem;
+            }
+        }
+    }   
+
+    .sectionIndexMasVendidos {
+        h2{
+            font-size: 1.3rem;
+        }
+    }
+
+    .contenedorProductos {
+        @include grid(1, 6, 2.8125rem, space-between);
+        margin-top: .75rem;
+    }
+
+    @keyframes aumentar {
+        0% {
+            font-size: 0;
+            background-color: $colorFondoTitulo;
+        }
+    
+        100% {
+            font-size: 1.3rem;
+            background-color: $colorFondoTitulo;
+        }
+    }
+
+    .redesSociales{
+        p{
+            margin-bottom: .625rem;
+        }
+    }
+
+    .iconosRedes{
+        a{
+            img{
+                width: 2.8125rem;
+                height: auto;
+                margin: .3125rem;
+            }
+        }
+    }
+
+    .envioGratis{
+        img{
+            height: 3.125rem;
+            width: auto;
+            margin-bottom: .3125rem;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+
+    .logoSugerencia {
+        img{
+            height: 3.125rem;
+            width: auto;
+        }
+        p{
+            font-size: .875rem;
+                    line-height: 1.5rem;
+                        max-height: 81.25rem;
+        }
+    }
+    .direccion{
+        font-size: .875rem;
+        margin-top: 1.25rem;
+    }
+
+    .emailContacto,
+    .telefonoContacto {
+        img{
+            width: 1.125rem;
+            height: auto;
+        }
+        font-size: .875rem;
+        gap: .625rem;
+    }
+    .contacto {
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 1.25rem;
+            }
+        }
+    .datosContacto{
+        font-size: .875rem;
+    }
+}

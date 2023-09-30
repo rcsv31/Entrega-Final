@@ -1,0 +1,77 @@
+@media (min-width: 768px) and (max-width: 846px) {
+    .bannerTuSello {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .envios,
+        .experiencia {
+            font-size: .875rem;
+
+            img {
+                height: 3rem;
+                width: auto;
+            }
+        }
+    }
+
+    @keyframes aumentar {
+        0% {
+            font-size: 0;
+            background-color: $colorFondoTitulo;
+        }
+    
+        100% {
+            font-size: 1.5rem;
+            background-color: $colorFondoTitulo;
+            }
+        }
+
+    .sectionIndexMasVendidos {
+    h2 {
+        font-size: 1.5rem;
+    }
+    }
+
+    .contenedorProductos {
+        margin-top: 1.125rem;
+    }
+
+    .logoSugerencia {
+        img{
+            height: 4.375rem;
+            width: auto;
+        }
+        p{
+            font-size: 1rem;
+            margin: 0;
+            line-height: 1.5rem;
+            max-height: 15.625rem;
+        }
+    }
+    .direccion{
+        font-size: 1rem;
+    }
+
+    .emailContacto,
+    .telefonoContacto {
+        img{
+            width: 1.875rem;
+            height: auto;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    .envioGratis {
+        img{
+            height: 3.75rem;
+            width: auto;
+            margin-bottom: .3125rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+}  

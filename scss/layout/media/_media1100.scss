@@ -1,0 +1,41 @@
+@media (min-width: 768px) and (max-width: 1100px) {
+.bannerTuSello{
+    h1{
+        font-size: 2rem;
+    }
+    .envios,
+    .experiencia {
+        font-size: 1rem;
+            img {
+            height: 4rem;
+            width: auto;
+            }
+        }
+    }
+
+    .contenedorProductos {
+        @include grid(2, 3, 2.8125rem, space-between);
+        font-size: 1rem;
+    }
+
+.redesSociales{
+    p{
+        margin: 0rem;
+    }
+    .iconosRedes {
+        a {
+            img {
+                width: 2.8125rem;
+                height: auto;
+                margin: .625rem;
+                }
+            }
+        }
+    }
+    .envioGratis {
+        img {
+            height: 4.0625rem;
+            width: auto;
+        }
+    }
+}

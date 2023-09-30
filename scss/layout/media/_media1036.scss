@@ -1,0 +1,43 @@
+@media (min-width: 847px) and (max-width: 1036px) {
+    
+    .logoSugerencia {   
+        img{
+            height: 4.375rem;
+            width: auto;
+        }
+        p {
+            font-size: 1rem;
+            margin: 0;
+            line-height: 1.5rem;
+            max-height: 12.5rem;
+        }
+    }
+    .direccion{
+        font-size: 1rem;
+        margin-top: 1.25rem;
+    }
+
+    .emailContacto,
+    .telefonoContacto {
+        img{
+            width: 1.5625rem;
+            height: auto;
+        }
+        font-size: 1rem;
+        gap: 1rem;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .telefonoContacto {
+        margin-top: 1rem;
+    }
+
+    .conacto{
+        h3{
+            gap: 30px;
+        }
+    }
+}

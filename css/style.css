@@ -1,0 +1,584 @@
+/*Reincio navegador*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.emailContacto,
+.telefonoContacto, .direccion, .logoSugerencia, .contacto h3, .sectionIndexMasVendidos h2, .datosContacto, .productosExLibris a p,
+.productosLacre a p,
+.productosSellosSeco a p, .productosMasVendidos a p, .productosExLibris a h3,
+.productosLacre a h3,
+.productosSellosSeco a h3, .productosMasVendidos a h3, footer, .sectionBannerTrodat h2, .bannerTuSello .envios,
+.bannerTuSello .experiencia, .bannerTuSello h1, .nav-link {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: #631E6B;
+}
+
+.navbar-brand img {
+  max-width: 3.125rem;
+}
+.navbar-brand img:hover {
+  filter: invert(48%) sepia(65%) saturate(7214%) hue-rotate(323deg) brightness(100%) contrast(105%);
+}
+
+.nav-link {
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+.nav-link:hover {
+  color: #FF2C6E;
+}
+
+.bannerTuSello {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1.25rem 1.25rem 0.625rem 1.25rem;
+  background-color: #C93E74;
+  color: #FFFFFF;
+  text-align: center;
+}
+.bannerTuSello h1 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+.bannerTuSello .subrayado {
+  display: inline-block;
+  position: relative;
+}
+.bannerTuSello .subrayado::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.25rem;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.6s ease-out;
+}
+.bannerTuSello .subrayado:hover::after {
+  transform: scaleX(1);
+}
+.bannerTuSello .envios,
+.bannerTuSello .experiencia {
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+.bannerTuSello .envios img,
+.bannerTuSello .experiencia img {
+  height: 5rem;
+}
+
+.sectionBannerTrodat {
+  background-image: url(../assets/img/banner-trodat.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.sectionBannerTrodat h2 {
+  font-size: 1.875rem;
+  color: #FF2C6E;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7137254902);
+  width: 100%;
+  animation: aumentar 1s ease-in-out forwards;
+}
+@keyframes aumentar {
+  0% {
+    font-size: 0;
+    background-color: rgba(255, 255, 255, 0.7137254902);
+  }
+  100% {
+    font-size: 1.875rem;
+    background-color: rgba(255, 255, 255, 0.7137254902);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1.25rem;
+  margin-top: 3.125rem;
+  background-color: #631E6B;
+}
+
+.redesSociales,
+.envioGratis {
+  text-align: center;
+}
+.redesSociales a img,
+.envioGratis a img {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin: 0.625rem;
+}
+.redesSociales a img:hover,
+.envioGratis a img:hover {
+  filter: invert(48%) sepia(65%) saturate(7214%) hue-rotate(323deg) brightness(100%) contrast(105%);
+  cursor: pointer;
+}
+
+.envioGratis p {
+  margin-bottom: 0.625rem;
+}
+
+.productosExLibris,
+.productosLacre,
+.productosSellosSeco, .productosMasVendidos {
+  justify-self: center;
+}
+.productosExLibris a,
+.productosLacre a,
+.productosSellosSeco a, .productosMasVendidos a {
+  text-decoration: none;
+}
+.productosExLibris a img,
+.productosLacre a img,
+.productosSellosSeco a img, .productosMasVendidos a img {
+  width: 18.75rem;
+  height: 18.75rem;
+}
+.productosExLibris a h3,
+.productosLacre a h3,
+.productosSellosSeco a h3, .productosMasVendidos a h3 {
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 0.3125rem;
+}
+.productosExLibris a p,
+.productosLacre a p,
+.productosSellosSeco a p, .productosMasVendidos a p {
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0.3125rem;
+}
+
+.contenedorProductos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3.125rem;
+  margin-top: 3.125rem;
+}
+
+.productosMasVendidos {
+  border: 2px solid #505050;
+  background-color: #FF2C6E;
+}
+.productosMasVendidos:hover {
+  background-color: #631E6B;
+  transform: scale(1.1);
+}
+
+.productosExLibris,
+.productosLacre,
+.productosSellosSeco {
+  border: 0.125rem solid #505050;
+  background-color: #631E6B;
+}
+.productosExLibris:hover,
+.productosLacre:hover,
+.productosSellosSeco:hover {
+  background-color: #FF2C6E;
+  transform: scale(1.1);
+}
+
+.productosSellosSeco {
+  align-self: center;
+}
+
+.datosContacto {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  color: #505050;
+  text-align: none;
+  gap: 0.75rem;
+}
+.datosContacto input[type=text],
+.datosContacto button,
+.datosContacto textarea[id=mensaje] {
+  width: 80%;
+  padding: 0.625rem;
+  border: 0.0625rem solid #505050;
+  border-radius: 0.3125rem;
+}
+.datosContacto button {
+  background-color: #FF2C6E;
+  color: rgba(255, 255, 255, 0.7137254902);
+}
+.datosContacto button:hover {
+  background-color: #631E6B;
+}
+
+.sectionIndexMasVendidos h2 {
+  font-size: 1.875rem;
+  color: #FF2C6E;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.contacto h3 {
+  font-size: 1.5625rem;
+  color: #505050;
+  text-align: left;
+  margin-top: 1.875rem;
+}
+
+.formasContacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 6.25rem;
+  padding-left: 1.25rem;
+}
+
+.informacionContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.logoSugerencia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.125rem;
+  color: #505050;
+  text-align: center;
+}
+.logoSugerencia img {
+  width: 5rem;
+  padding-bottom: 1.25rem;
+}
+.logoSugerencia p {
+  margin: 0;
+  line-height: 1.5;
+  max-height: 7.5em;
+}
+
+.direccion {
+  font-size: 1.25rem;
+  color: #505050;
+  text-align: center;
+  margin-top: 1.5625rem;
+}
+
+.emailContacto,
+.telefonoContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+  color: #505050;
+  text-align: center;
+  gap: 1.25rem;
+}
+.emailContacto p,
+.telefonoContacto p {
+  margin: 0;
+}
+
+.telefonoContacto {
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .bannerTuSello h1 {
+    font-size: 2rem;
+  }
+  .bannerTuSello .envios,
+  .bannerTuSello .experiencia {
+    font-size: 1rem;
+  }
+  .bannerTuSello .envios img,
+  .bannerTuSello .experiencia img {
+    height: 4rem;
+    width: auto;
+  }
+  .contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2.8125rem;
+    font-size: 1rem;
+  }
+  .redesSociales p {
+    margin: 0rem;
+  }
+  .redesSociales .iconosRedes a img {
+    width: 2.8125rem;
+    height: auto;
+    margin: 0.625rem;
+  }
+  .envioGratis img {
+    height: 4.0625rem;
+    width: auto;
+  }
+}
+@media (min-width: 847px) and (max-width: 1036px) {
+  .logoSugerencia img {
+    height: 4.375rem;
+    width: auto;
+  }
+  .logoSugerencia p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5rem;
+    max-height: 12.5rem;
+  }
+  .direccion {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+  }
+  .emailContacto,
+  .telefonoContacto {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+  .emailContacto img,
+  .telefonoContacto img {
+    width: 1.5625rem;
+    height: auto;
+  }
+  .emailContacto p,
+  .telefonoContacto p {
+    margin: 0;
+  }
+  .telefonoContacto {
+    margin-top: 1rem;
+  }
+  .conacto h3 {
+    gap: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 846px) {
+  .bannerTuSello h1 {
+    font-size: 1.5rem;
+  }
+  .bannerTuSello .envios,
+  .bannerTuSello .experiencia {
+    font-size: 0.875rem;
+  }
+  .bannerTuSello .envios img,
+  .bannerTuSello .experiencia img {
+    height: 3rem;
+    width: auto;
+  }
+  @keyframes aumentar {
+    0% {
+      font-size: 0;
+      background-color: rgba(255, 255, 255, 0.7137254902);
+    }
+    100% {
+      font-size: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.7137254902);
+    }
+  }
+  .sectionIndexMasVendidos h2 {
+    font-size: 1.5rem;
+  }
+  .contenedorProductos {
+    margin-top: 1.125rem;
+  }
+  .logoSugerencia img {
+    height: 4.375rem;
+    width: auto;
+  }
+  .logoSugerencia p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5rem;
+    max-height: 15.625rem;
+  }
+  .direccion {
+    font-size: 1rem;
+  }
+  .emailContacto img,
+  .telefonoContacto img {
+    width: 1.875rem;
+    height: auto;
+  }
+  .emailContacto p,
+  .telefonoContacto p {
+    font-size: 1rem;
+  }
+  .envioGratis img {
+    height: 3.75rem;
+    width: auto;
+    margin-bottom: 0.3125rem;
+  }
+  .envioGratis p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .navbar-brand img {
+    width: 2.625rem;
+  }
+  .bannerTuSello {
+    flex-direction: column;
+  }
+  .bannerTuSello h1 {
+    font-size: 1.5625rem;
+  }
+  .bannerTuSello .experiencia,
+  .bannerTuSello .envios {
+    font-size: 1rem;
+  }
+  .bannerTuSello .experiencia img,
+  .bannerTuSello .envios img {
+    height: 3rem;
+    width: auto;
+  }
+  .bannerTuSello .envios p {
+    margin-bottom: 0rem;
+  }
+  .sectionIndexMasVendidos h2 {
+    font-size: 1.3rem;
+  }
+  .contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2.8125rem;
+    margin-top: 0.75rem;
+  }
+  @keyframes aumentar {
+    0% {
+      font-size: 0;
+      background-color: rgba(255, 255, 255, 0.7137254902);
+    }
+    100% {
+      font-size: 1.3rem;
+      background-color: rgba(255, 255, 255, 0.7137254902);
+    }
+  }
+  .redesSociales p {
+    margin-bottom: 0.625rem;
+  }
+  .iconosRedes a img {
+    width: 2.8125rem;
+    height: auto;
+    margin: 0.3125rem;
+  }
+  .envioGratis img {
+    height: 3.125rem;
+    width: auto;
+    margin-bottom: 0.3125rem;
+  }
+  .envioGratis p {
+    font-size: 14px;
+  }
+  .logoSugerencia img {
+    height: 3.125rem;
+    width: auto;
+  }
+  .logoSugerencia p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    max-height: 81.25rem;
+  }
+  .direccion {
+    font-size: 0.875rem;
+    margin-top: 1.25rem;
+  }
+  .emailContacto,
+  .telefonoContacto {
+    font-size: 0.875rem;
+    gap: 0.625rem;
+  }
+  .emailContacto img,
+  .telefonoContacto img {
+    width: 1.125rem;
+    height: auto;
+  }
+  .contacto h3 {
+    font-size: 1.3rem;
+    margin-top: 1.25rem;
+  }
+  .datosContacto {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 549px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .formasContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+  }
+  .logoSugerencia p {
+    margin-right: 1.25rem;
+  }
+  .contacto {
+    margin-top: -4.375rem;
+  }
+  .datosContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contacto h3 {
+    font-size: 1.3rem;
+    color: #505050;
+    text-align: center;
+  }
+}
+/*@import "./layout/media/media700";*/
+/*@import "./layout/media/media991";
+@import "./layout/media/media768";
+@import "./layout/media/media700";
+@import "./layout/media/media635";
+@import "./layout/media/media595";
+@import "./layout/media/media465";
+@import "./layout/media/media425";*/
+
+/*# sourceMappingURL=style.css.map */
